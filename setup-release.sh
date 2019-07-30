@@ -17,4 +17,4 @@ git clone https://github.com/SagarOnline/openshift-devops-helloworld-config.git 
 oc process release-management-template --param-file=helloworld-config/release/release.properties --ignore-unknown-parameters=true | oc create -f -
 
 # Start "helloworld-v1-dev-rollout" 
-oc start-build helloworld-v1-dev-rollout
+#oc start-build helloworld-v1-dev-rollout
