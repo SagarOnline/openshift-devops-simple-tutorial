@@ -25,3 +25,9 @@ Create Release
 6. Start "helloworld-v1-dev-rollout" pipeline either from Web-UI or through Openshift CLI.
     a. From Web UI : Go to Builds > Pipelines > helloworld-v1-dev-rollout > Start Pipeline
     b. from Openshift CLI : oc start-build helloworld-v1-dev-rollout
+
+
+7. To start build from command
+    a. first create buildconfig from yaml 'oc apply -f temp-build.yaml'
+    b. create archive using command 'tar -cvf context.tar target/helloworld.jar Dockerfile'
+    c. Start build by passing tar created in last step 'oc start-build helloworld-build --from-archive=context.tar'
