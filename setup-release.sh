@@ -16,5 +16,9 @@ git clone https://github.com/SagarOnline/openshift-devops-helloworld-config.git 
 # Process Release Management Template to create a release for helloworld v1. This will create a "helloworld-v1-dev-rollout" pipeline in cluster to deploy a helloworld application in cluster.
 oc process release-management-template --param-file=helloworld-config/release/release.properties --ignore-unknown-parameters=true | oc create -f -
 
+
+
 # Start "helloworld-v1-dev-rollout" 
-oc start-build helloworld-v1-dev-rollout
+#oc start-build helloworld-v1-dev-rollout
+
+oc start-build helloworld-v1-dev-build
