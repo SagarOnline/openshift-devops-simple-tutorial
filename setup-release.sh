@@ -8,7 +8,7 @@ oc new-project helloworld-v1
 oc new-app jenkins-ephemeral
 
 # Import Release Management Template,
-oc create -f https://raw.githubusercontent.com/SagarOnline/openshift-devops-simple-global-config/master/release/release-management-template.yaml
+oc apply -f https://raw.githubusercontent.com/SagarOnline/openshift-devops-simple-global-config/master/release/release-management-template.yaml
 
 # Checkout helloworld-config project
 git clone https://github.com/SagarOnline/openshift-devops-helloworld-config.git helloworld-config

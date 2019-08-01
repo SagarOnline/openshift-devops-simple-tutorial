@@ -31,3 +31,10 @@ Create Release
     a. first create buildconfig from yaml 'oc apply -f temp-build.yaml'
     b. create archive using command 'tar -cvf context.tar target/helloworld.jar Dockerfile'
     c. Start build by passing tar created in last step 'oc start-build helloworld-build --from-archive=context.tar'
+
+
+
+
+    Points for documentation
+    - How auto build is triggered
+    - 
